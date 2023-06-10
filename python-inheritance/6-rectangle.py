@@ -18,8 +18,5 @@ class Rectangle(BaseGeometry):
 
         super().integer_validation("height", height)
         super().integer_validation("width", width)
-
-        # The initialization of the width and height which must be private with
-        # no getter or setter and be positive
         self._width = width
         self._height = height
