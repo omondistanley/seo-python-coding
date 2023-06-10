@@ -4,23 +4,19 @@
     must be private with no getter or setter and be positive.
 """
 
+BaseGeometry = _import_('6-rectangle.py').BaseGeometry
 
-class Rectangle:
-    """ Basing the class on the empty BaseGeometry class """
 
-    def area(self):
-        """ Public instance methof of the area, raises exception """
-        raise Exception("area() is not implemented")
-
-    def integer_validator(self, name, value):
-        # Public instance method that validates the value ensuring its positive
-        if type(value) != int:
-            raise TypeError("{} must be an integer".format(name))
-        if value <= 0:
-            raise ValueError("{} must be greater than 0".format(name))
+class Rectangle(BaseGeometry):
+    """ Basing the class on the BaseGeometry class, ractangle inherits """
 
     def _init_(self, width, height):
-        # The instantiation of the width and height which must be private with
+        # Call the integer validator method from the 6-base_geometry class.
+        # Use the super method to call the super class
+        super().integer_validation("height", height)
+        super().integer_validation("width", width)
+
+        # The initialization of the width and height which must be private with
         # no getter or setter and be positive
         self._width = width
         self._height = height
