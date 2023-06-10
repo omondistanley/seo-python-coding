@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ A rectangle class that inherits from BaseGeometry - 5-base_geometry class
-    has the instantiation of the width and height. The width and height 
+    has the instantiation of the width and height. The width and height
     must be private with no getter or setter and be positive.
 """
 
