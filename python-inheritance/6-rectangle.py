@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-""" A rectangle class that inherits from BaseGeometry - 5-base_geometry class
+"""
+    A rectangle class that inherits from BaseGeometry - 5-base_geometry class
     has the instantiation of the width and height. The width and height
     must be private with no getter or setter and be positive.
 """
 
 
-BaseGeometry = _import_('6-rectangle.py').BaseGeometry
+BaseGeometry = _import_('5-base_geometry.py').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
@@ -17,6 +18,7 @@ class Rectangle(BaseGeometry):
 
         super().integer_validation("height", height)
         super().integer_validation("width", width)
+
         # The initialization of the width and height which must be private with
         # no getter or setter and be positive
         self._width = width
