@@ -20,7 +20,6 @@ class Ractangle(BaseGeometry):
 
         super().integer_validator("height", height)
         super().integer_validator("width", width)
-
         # Call and initialize the width method.
         self._width = width
         self._height = height
