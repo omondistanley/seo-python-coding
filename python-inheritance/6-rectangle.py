@@ -3,10 +3,13 @@
     A rectangle class that inherits from BaseGeometry - 5-base_geometry class
     has the instantiation of the width and height. The width and height
     must be private with no getter or setter and be positive.
+
+    Use the integer validator from the 5-base_geometry class to ensure the
+    width and height are integers and greater than zero.
 """
 
 
-BaseGeometry = _import_('5-base_geometry.py').BaseGeometry
+BaseGeometry = __import__('5-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
