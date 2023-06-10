@@ -13,6 +13,7 @@ class BaseGeometry:
         """ Public instance method  of the area, raises exception if the area
         isn't used. """
         raise Exception("area() is not implemented")
+    
     def integer_validator(self, name, value):
         """ Public instance method that validates the value """
         if type(value) != int:
