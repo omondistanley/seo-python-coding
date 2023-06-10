@@ -16,7 +16,7 @@ class Rectangle(BaseGeometry):
     """ Basing the class on the BaseGeometry class, ractangle inherits """
 
     def __init__(self, width, height):
-        """ Call the integer validator method from the 6-base_geometry
+        """ Call the integer validator method from the 5-base_geometry
              Use the super method to call the super class """
 
         super().integer_validator("height", height)
