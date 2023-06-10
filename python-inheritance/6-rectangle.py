@@ -19,7 +19,7 @@ class Rectangle(BaseGeometry):
         """ Call the integer validator method from the 6-base_geometry
              Use the super method to call the super class """
 
-        super().integer_validation("height", height)
-        super().integer_validation("width", width)
+        super().integer_validator("height", height)
+        super().integer_validator("width", width)
         self._width = width
         self._height = height
