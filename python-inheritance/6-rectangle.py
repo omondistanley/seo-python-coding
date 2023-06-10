@@ -4,6 +4,7 @@
     must be private with no getter or setter and be positive.
 """
 
+
 BaseGeometry = _import_('6-rectangle.py').BaseGeometry
 
 
@@ -11,8 +12,9 @@ class Rectangle(BaseGeometry):
     """ Basing the class on the BaseGeometry class, ractangle inherits """
 
     def _init_(self, width, height):
-        # Call the integer validator method from the 6-base_geometry class.
-        # Use the super method to call the super class
+        """ Call the integer validator method from the 6-base_geometry
+             Use the super method to call the super class """
+
         super().integer_validation("height", height)
         super().integer_validation("width", width)
 
