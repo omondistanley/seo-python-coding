@@ -12,9 +12,11 @@ BaseGeometry = __import__('5-base_geometry').BaseGeometry
 
 class Ractangle(BaseGeometry):
     """ Based on the base geometry class """
+
     def __init__(self, width, height):
         """ Initialization of the variables, height and width takes
             place here. """
+
         # Call the integer validator method from 5-base_geometry
         # use the super method to call methods from the super 
         # class.
