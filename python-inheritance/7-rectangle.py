@@ -16,7 +16,6 @@ class Ractangle(BaseGeometry):
         # Call the integer validator method from 5-base_geometry
         # use the super method to call methods from the super 
         # class.
-        """ Initialization of the variables also takes place here. """
         super().integer_validator("height", height)
         super().integer_validator("width", width)
         self._width = width
