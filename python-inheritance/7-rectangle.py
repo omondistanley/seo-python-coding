@@ -23,11 +23,13 @@ class Ractangle(BaseGeometry):
 
     def area(self):
         """ Method calculating and returning the rectangle's area """
+        
         return self._width * self._height
 
     def string(self):
         """ Method that returns and prints the description of the
         rectangle. """
+
         width = str(self._width)
         length = str(self._length)
         return "[" + __class__.__name__ + "]" + width + "/" + length
