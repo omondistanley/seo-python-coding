@@ -26,7 +26,7 @@ class Ractangle(BaseGeometry):
         self._height = height
 
     def area(self):
-        # Method calculating and returning the rectangle's area.
+        """ Method calculating and returning the rectangle's area. """
         return self._width * self._height
 
     def string(self):
