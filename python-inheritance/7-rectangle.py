@@ -15,8 +15,6 @@ class Ractangle(BaseGeometry):
 
     def __init__(self, width, height):
         """ Initialization of the variables, height and width takes
-            place here. Call the integer validator method from the
-            5-base_geometry use the super method to call methods from 
             the super class. """
         super().integer_validator("height", height)
         super().integer_validator("width", width)
