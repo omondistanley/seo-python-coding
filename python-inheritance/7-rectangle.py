@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """
+    docstring documentation
     A reactangle class with the base geometry with height and width
     initialized and positive integers.The class also returns the
     area and properties of the rectangle, ie width, hieght etc.
