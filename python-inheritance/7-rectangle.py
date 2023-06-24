@@ -10,7 +10,7 @@
 BaseGeometry = __import__('5-base_geometry').BaseGeometry
 
 
-class Ractangle(BaseGeometry):
+class Rectangle(BaseGeometry):
     """ Basing the class on the BaseGeometry class, rectangle inherits """
 
     def __init__(self, width, height):
