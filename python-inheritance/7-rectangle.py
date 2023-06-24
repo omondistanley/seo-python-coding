@@ -11,7 +11,11 @@ BaseGeometry = __import__('5-base_geometry').BaseGeometry
 
 
 class Ractangle(BaseGeometry):
+    # rectangle class based on the BaseGeometry class. 
     def __init__(self, width, height):
+        """ Initialization of the width and height, calls the integer
+            validator from the super class before assigning.
+        """
         super().integer_validator("height", height)
         super().integer_validator("width", width)
         self._width = width
@@ -23,7 +27,8 @@ class Ractangle(BaseGeometry):
 
     def string(self):
         """ Method that returns and prints the description of the
-        # rectangle. """
+        # rectangle.
+        """
         width = str(self._width)
         length = str(self._length)
         return "[" + __class__.__name__ + "]" + width + "/" + length
