@@ -14,12 +14,8 @@ class Square:
     """ The square class inheriting from rectangle class. """
 
     def __init__(self, size):
-        """ The method initializes the size, ensure its a
-            positive integer and private. """
         super().Integer_validator("size", size)
         self._size = size
 
     def area(self):
-        """ The method calculates the area of the square and
-            returns it. """
         return self._size * self._size
