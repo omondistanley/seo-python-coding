@@ -11,13 +11,13 @@
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
-class Square:
+class Square(BaseGeometry):
     """ The square class inheriting from rectangle class. """
 
     def __init__(self, size):
         """ The method initializes the size to be a positive int
             and set to be a private variable. """
-        super().Integer_validator("size", size)
+        super().integer_validator("size", size)
         self._size = size
 
     def area(self):
