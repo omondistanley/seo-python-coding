@@ -8,10 +8,10 @@
 """
 
 
-BaseGeometry = __import__('7-rectangle').BaseGeometry
+Rectangle = __import__('7-rectangle').Rectangle
 
 
-class Square(BaseGeometry):
+class Square(Rectangle):
     """ The square class inheriting from rectangle class. """
 
     def __init__(self, size):
