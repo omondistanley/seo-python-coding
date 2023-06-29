@@ -27,4 +27,4 @@ class Square(BaseGeometry):
     def __str__(self):
         """ Returns the size of the square and name rectangle. """
         width = str(self._size)
-        return "[Rectangle] " + width + "/" + width 
+        return "[Rectangle] " + width + "/" + width
